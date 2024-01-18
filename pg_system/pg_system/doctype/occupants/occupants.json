@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:name1",
+ "creation": "2024-01-17 17:46:34.311945",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "contact_information",
+  "column_break_ojeon",
+  "check_in",
+  "check_out",
+  "section_break_7ugv2",
+  "room_type",
+  "emergency_contact",
+  "payment_status",
+  "column_break_6wtug",
+  "amount_due",
+  "id_proof",
+  "additional_notes",
+  "occupancy_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "contact_information",
+   "fieldtype": "Data",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "check_in",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check in",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_out",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Check out",
+   "reqd": 1
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "PG Accommodation"
+  },
+  {
+   "fieldname": "emergency_contact",
+   "fieldtype": "Data",
+   "label": "Emergency Contact"
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPartially Paid\nPaid\nOverdue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amount_due",
+   "fieldtype": "Currency",
+   "label": "Amount Due"
+  },
+  {
+   "fieldname": "id_proof",
+   "fieldtype": "Attach",
+   "label": "ID Proof"
+  },
+  {
+   "fieldname": "additional_notes",
+   "fieldtype": "Text",
+   "label": "Additional Notes"
+  },
+  {
+   "fieldname": "occupancy_status",
+   "fieldtype": "Select",
+   "label": "Occupancy Status",
+   "options": "Checked In\nChecked Out\nPending Check-out",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_ojeon",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_7ugv2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_6wtug",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-18 13:10:05.886846",
+ "modified_by": "Administrator",
+ "module": "Pg System",
+ "name": "Occupants",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PG Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PG Employee",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

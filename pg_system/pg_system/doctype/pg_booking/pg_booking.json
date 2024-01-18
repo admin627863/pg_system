@@ -1,0 +1,196 @@
+{
+ "actions": [],
+ "autoname": "naming_series:",
+ "creation": "2024-01-17 18:01:29.616193",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "guest_name",
+  "contact_information",
+  "room_type",
+  "column_break_c0klt",
+  "check_in_date",
+  "check_out_date",
+  "number_of_guests",
+  "section_break_poysc",
+  "total_cost",
+  "booking_status",
+  "payment_status",
+  "booking_date",
+  "column_break_hbug2",
+  "special_requests",
+  "assigned_room",
+  "check_in_status",
+  "check_out_status",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Guest Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_information",
+   "fieldtype": "Data",
+   "label": "Contact Information"
+  },
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Single Occupancy\nDouble Sharing\nTriple Sharing\nMultiple Sharing (Four or more)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "check_in_date",
+   "fieldtype": "Date",
+   "label": "Check in Date"
+  },
+  {
+   "fieldname": "check_out_date",
+   "fieldtype": "Date",
+   "label": "Check out Date"
+  },
+  {
+   "fieldname": "number_of_guests",
+   "fieldtype": "Int",
+   "label": "Number of Guests"
+  },
+  {
+   "fieldname": "total_cost",
+   "fieldtype": "Currency",
+   "label": "Total Cost"
+  },
+  {
+   "fieldname": "booking_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Booking Status",
+   "options": "Confirmed\nPending Confirmation\nCancelled",
+   "reqd": 1
+  },
+  {
+   "fieldname": "payment_status",
+   "fieldtype": "Select",
+   "label": "Payment Status",
+   "options": "Unpaid\nPartially Paid\nPaid\nOverdue",
+   "reqd": 1
+  },
+  {
+   "fieldname": "booking_date",
+   "fieldtype": "Date",
+   "label": "Booking Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "special_requests",
+   "fieldtype": "Text",
+   "label": "Special Requests"
+  },
+  {
+   "fieldname": "assigned_room",
+   "fieldtype": "Link",
+   "label": "Assigned Room",
+   "options": "PG Accommodation"
+  },
+  {
+   "fieldname": "check_in_status",
+   "fieldtype": "Select",
+   "label": "Check in Status",
+   "options": "Checked In\nNot Checked In\nChecked Out"
+  },
+  {
+   "fieldname": "check_out_status",
+   "fieldtype": "Select",
+   "label": "Check out Status",
+   "options": "Checked Out\nNot Checked Out"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Booking",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_c0klt",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_poysc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_hbug2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Booking ID",
+   "options": "BOOK-",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-18 16:44:30.078155",
+ "modified_by": "Administrator",
+ "module": "Pg System",
+ "name": "PG Booking",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PG Guest",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PG Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

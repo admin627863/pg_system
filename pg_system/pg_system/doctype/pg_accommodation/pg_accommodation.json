@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2024-01-17 17:23:40.266562",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "room_type",
+  "column_break_dutkq",
+  "cost",
+  "availability",
+  "occupancy_status",
+  "section_break_ftycc",
+  "facilities",
+  "description",
+  "occupants",
+  "column_break_zgksb",
+  "pg_location",
+  "availability_dates",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "room_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Room Type",
+   "options": "Single Occupancy\nDouble Sharing\nTriple Sharing\nMultiple Sharing (Four or more)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cost",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Cost",
+   "reqd": 1
+  },
+  {
+   "fieldname": "availability",
+   "fieldtype": "Int",
+   "label": "Availability"
+  },
+  {
+   "fieldname": "occupancy_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Occupancy Status",
+   "options": "Available\nOccupied\nUnder Maintenance",
+   "reqd": 1
+  },
+  {
+   "fieldname": "facilities",
+   "fieldtype": "Data",
+   "label": "Facilities"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "pg_location",
+   "fieldtype": "Link",
+   "label": "PG Location",
+   "options": "Address"
+  },
+  {
+   "fieldname": "availability_dates",
+   "fieldtype": "Date",
+   "label": "Availability Dates"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "PG Accommodation",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "PGAC-",
+   "reqd": 1
+  },
+  {
+   "fieldname": "occupants",
+   "fieldtype": "Link",
+   "label": "Occupants",
+   "options": "Occupants",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dutkq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_ftycc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_zgksb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-01-18 12:53:55.667865",
+ "modified_by": "Administrator",
+ "module": "Pg System",
+ "name": "PG Accommodation",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "PG Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,61 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"pz4Cztr6Z9\",\"type\":\"header\",\"data\":{\"text\":\"<span style=\\\"font-size: 18px;\\\">Your Shortcuts</span>\",\"col\":12}},{\"id\":\"VBBAB8nq-K\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PG Booking\",\"col\":3}},{\"id\":\"EEDhlgIpE_\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Occupants\",\"col\":3}},{\"id\":\"478pZsXQHp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"PG Accommodation\",\"col\":3}},{\"id\":\"-vnYbWra-Q\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Work Log\",\"col\":3}}]",
+ "creation": "2024-01-17 18:17:57.251427",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "share",
+ "idx": 0,
+ "is_hidden": 0,
+ "label": "Paying Guest",
+ "links": [],
+ "modified": "2024-01-18 12:44:31.281450",
+ "modified_by": "Administrator",
+ "module": "Pg System",
+ "name": "Paying Guest",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "PG Booking",
+   "link_to": "PG Booking",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Occupants",
+   "link_to": "Occupants",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Work Log",
+   "link_to": "Work Log",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "PG Accommodation",
+   "link_to": "PG Accommodation",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Paying Guest"
+}
